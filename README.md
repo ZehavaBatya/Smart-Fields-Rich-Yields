@@ -15,33 +15,17 @@ Model Training: Utilize machine learning algorithms to develop a predictive mode
 Evaluation and Tuning: Assess the model's performance using validation datasets, and fine-tune parameters to optimize predictive accuracy and reliability.
 
 # Docker
-Build Docker Image:
-Build the Docker image by executing the following command. This command creates an image named churn-flask-app.
-
-bash
-Copy code
+# Build Docker Image:
 docker build -t churn-flask-app .
-Check Available Images:
-View the available Docker images using the following command:
 
-bash
-Copy code
+# Check Available Images:
 docker images
-Run Docker Container:
-Launch a Docker container with the Flask app using the following command. The container will run in detached mode, interactively, and will be automatically removed when stopped. Additionally, it maps port 9696 on the host to port 9696 in the container.
 
-bash
-Copy code
+# Run Docker Container:
 docker run -d --rm -p 9696:9696 --name my-flask-container churn-flask-app
-List Running Containers:
-Display a list of running containers along with their ports using the following command:
 
-bash
-Copy code
+# List Running Containers:
 docker ps -a
-Stop Docker Container:
-Stop the running container named my-flask-container using the following command:
 
-bash
-Copy code
+# Stop Docker Container:
 docker stop my-flask-container
